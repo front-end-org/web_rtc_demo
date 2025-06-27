@@ -1,5 +1,5 @@
 'use strict';
-const localVideo = document.getElementById('video');
+var  localVideo = document.getElementById('video');
 
 // 核心API - enumerateDevices
 // 获取所有可用设备

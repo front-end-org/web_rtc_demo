@@ -18,14 +18,23 @@
             <option value="sepia">深褐色</option>
         </select>
     </div>
+    <!-- video用来获取设备视频流 -->
     <video autoplay playsinline id="video"></video>
     <div>
         <canvas id="canvas"></canvas>
         <button id="takePhoto" onclick="takePhoto()">拍照</button>
         <button id="savePhoto" onclick="savePhoto()">保存</button>
     </div>
+    <div>
+        <button id="record" onclick="startRecord()">开始录制</button>
+        <button id="recPlay"  onclick="recPlay()">播放录制文件</button>
+        <button id="recDownload" onclick="recDownload()">下载录制文件</button>
+        <!-- recvideo用来播放录制内容 -->
+        <video id="recvideo"></video>
+    </div>
     <script src="js/client.js"></script>
     <script src="js/take-photo.js"></script>
+    <script src="js/record.js"></script>
 </body>
 
 </html>
