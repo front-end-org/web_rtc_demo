@@ -1,0 +1,21 @@
+.none {
+    -webkit-filter: none;
+}
+
+/* 模糊 */
+.blur {
+    -webkit-filter: blur(3px);
+}
+
+/* 灰度(黑白) */
+.grayscale {
+    -webkit-filter: grayscale(1);
+}
+/* 反转 */
+.invert {
+    -webkit-filter: invert(1);
+}
+/* 深褐色 */
+.sepia {
+    -webkit-filter: sepia(1);
+}

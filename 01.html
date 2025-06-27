@@ -8,10 +8,22 @@
 
 <body>
     <h1>WebRTC实时通讯</h1>
+    <div>
+        <span>添加滤镜</span>
+        <select id="select" onchange="onSelectChange(this.value)">
+            <option value="none">无</option>
+            <option value="blur">模糊度</option>
+            <option value="grayscale">灰度（黑白）</option>
+            <option value="invert">反转</option>
+            <option value="sepia">深褐色</option>
+        </select>
+    </div>
     <video autoplay playsinline id="video"></video>
-    <button id="takePhoto" onclick="takePhoto()">拍照</button>
-    <canvas id="canvas"></canvas>
-    <button id="savePhoto" onclick="savePhoto()">保存</button>
+    <div>
+        <canvas id="canvas"></canvas>
+        <button id="takePhoto" onclick="takePhoto()">拍照</button>
+        <button id="savePhoto" onclick="savePhoto()">保存</button>
+    </div>
     <script src="js/client.js"></script>
     <script src="js/take-photo.js"></script>
 </body>
