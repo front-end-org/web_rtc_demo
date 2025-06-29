@@ -2,6 +2,7 @@ var localVideo = document.getElementById('video');
 var btnRecPlay = document.getElementById('recPlay');
 var btnRecDownload = document.getElementById('recDownload');
 var recvideo = document.getElementById('recvideo');
+
 var buffer;
 
 /**
